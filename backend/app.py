@@ -94,3 +94,8 @@ def generate_traffic_report():
     # Placeholder for report generation logic
     # Example: generate a CSV file of all roads and their traffic conditions
     return jsonify({'message': 'Report generation not implemented'}), 200
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port, debug=True)
