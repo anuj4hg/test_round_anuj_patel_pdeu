@@ -1,8 +1,8 @@
 # __init__.py
 from flask import Flask
-from app.config import Config 
-from app.models import db
-from app.routes import routes
+from backend.config import Config 
+from backend.models import db
+from backend.routes import routes
 
 app = Flask(__name__)
 app.config.from_object(Config)
