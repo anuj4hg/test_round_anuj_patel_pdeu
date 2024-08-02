@@ -1,8 +1,8 @@
 from datetime import datetime  # Ensure this import is correct
 from flask import Blueprint, request, jsonify
-from app import db
-from app.models import Location, Road, TrafficUpdate
-from app.utils import calculate_shortest_path
+from backend import db
+from backend.models import Location, Road, TrafficUpdate
+from backend.utils import calculate_shortest_path
 from sqlalchemy.exc import StatementError
 
 # Define the blueprint
