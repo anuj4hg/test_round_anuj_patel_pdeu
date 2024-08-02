@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from config import Config
+from backend.config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
