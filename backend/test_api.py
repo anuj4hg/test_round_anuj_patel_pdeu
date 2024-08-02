@@ -1,8 +1,8 @@
 # test_api.py
 import unittest
 from flask_testing import TestCase
-from app import app, db
-from app.models import Location, Road
+from backend import app, db
+from backend.models import Location, Road
 
 class APITestCase(TestCase):
     def create_app(self):
