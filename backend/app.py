@@ -96,4 +96,5 @@ def generate_traffic_report():
     return jsonify({'message': 'Report generation not implemented'}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
